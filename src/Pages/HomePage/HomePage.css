@@ -1,0 +1,87 @@
+.home{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    min-height: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    color: lightcoral;
+}
+.calendar-with-form{
+    /* height: 100%; */
+    /* background-color: red; */
+    margin-top: 20px !important;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+}
+.calender-date{
+    width: 40%;
+    /* background-color: pink; */
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.form{
+    width: 60%;
+    /* background-color: red; */
+    justify-content: center;
+    text-align: start;
+    align-items: start;
+    gap: 50px;
+}
+.user-box, .reservation-box{
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+.title{
+    color: pink;
+    font-size: 20px;
+    /* justify-content: center; */
+    text-align: center;
+}
+.user-fields, .reservation-fields{
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: center; */
+
+}
+.user-field{
+    width: 40%;
+}
+.address{
+    width: 100%;
+    /* justify-content: center; */
+}
+.user-field-address{
+    width: 85%;
+}
+.room-choices{
+    width: 100%;
+    /* background-color: pink; */
+}
+.room-types {
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 5%;
+}
+.submit{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+}
+.book-submit{
+    width: 200px;
+}
