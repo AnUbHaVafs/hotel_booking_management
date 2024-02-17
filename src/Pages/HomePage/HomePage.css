@@ -1,6 +1,7 @@
 .home{
     width: 100vw;
     height: 100vh;
+    z-index: 2 !important;
 }
 .header{
     width: 100%;
@@ -9,7 +10,10 @@
     text-align: center;
     justify-content: center;
     font-size: 30px;
-    color: lightcoral;
+    /* color: lightcoral; */
+    /* text-decoration: underline; */
+    color: #831843;
+    z-index:10;
 }
 .calendar-with-form{
     /* height: 100%; */
@@ -22,26 +26,31 @@
 }
 .calender-date{
     width: 40%;
+    z-index: 2;
     /* background-color: pink; */
     justify-content: center;
     gap: 20px;
     align-items: center;
 }
 .form{
-    width: 60%;
-    /* background-color: red; */
+    /* width: 60%; */
+    /* background-color: #fff1f2; */
     justify-content: center;
     text-align: start;
     align-items: start;
     gap: 50px;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .user-box, .reservation-box{
     width: 100%;
     justify-content: center;
     gap: 30px;
+    
 }
 .title{
-    color: pink;
+    color: #831843;
     font-size: 20px;
     /* justify-content: center; */
     text-align: center;
@@ -84,4 +93,6 @@
 }
 .book-submit{
     width: 200px;
+    color: #831843 !important;
+    border: 1px solid #831843 !important;
 }

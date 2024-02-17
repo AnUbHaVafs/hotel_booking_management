@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./HomePage.css";
 import { IonDatetime } from '@ionic/react';
 import { Button, Checkbox, FormControlLabel, FormGroup, TextField } from '@mui/material';
 import { pink } from '@mui/material/colors';
-// import '@ionic/react/css/core.css';
+import { advancedStaggeringAnimation } from '../../helpers';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const HomePage = () => {
+    useEffect(()=>{
+        advancedStaggeringAnimation();
+    },[])
   return (
     <div className='home'>
+
+    {/* staggering animation wrapper */}
+      <div className="animation-body">
+        <div className="animation-wrapper">
+          <div className="stagger-visualizer">
+            <div className="cursor color-red"></div>
+            <div className="dots-wrapper"></div>
+          </div>
+        </div>
+      </div>
+
         {/* header */}
-        <div className='header dfc'>Hotel Booking</div>
+        <div className='header dfc'>Havenly Homes Hotel Booking App</div>
 
         {/* calendar-with-form */}
         <div className='calendar-with-form dfr'>
@@ -29,28 +43,29 @@ const HomePage = () => {
                         label="Standard warning"
                         variant="standard"
                         className='user-field'
-                        // color="warning"
+                        focused
+                        color="secondary"
+                        />
+                        <TextField
+                        label="Standard warning"
+                        variant="standard"
+                        className='user-field'
+                        color="secondary"
                         focused
                         />
                         <TextField
                         label="Standard warning"
                         variant="standard"
                         className='user-field'
-                        // color="warning"
+                        color="secondary"
                         focused
                         />
                         <TextField
                         label="Standard warning"
                         variant="standard"
                         className='user-field'
-                        // color="warning"
-                        focused
-                        />
-                        <TextField
-                        label="Standard warning"
-                        variant="standard"
-                        className='user-field'
-                        // color="warning"
+                        color="secondary"
+                        
                         focused
                         />                        
                     </div>
@@ -64,14 +79,14 @@ const HomePage = () => {
                         label="Standard warning"
                         variant="standard"
                         className='user-field'
-                        // color="warning"
+                        color="secondary"
                         focused
                         />
                         <TextField
                         label="Standard warning"
                         variant="standard"
                         className='user-field'
-                        // color="warning"
+                        color="secondary"
                         focused
                         />
                         
