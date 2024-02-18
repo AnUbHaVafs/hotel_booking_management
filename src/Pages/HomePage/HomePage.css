@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 2 !important;
+    overflow: scroll;
 }
 .header{
     width: 100%;
@@ -9,6 +10,7 @@
     min-height: 50px;
     text-align: center;
     justify-content: center;
+    padding-top: 20px;
     font-size: 30px;
     /* color: lightcoral; */
     /* text-decoration: underline; */
@@ -28,6 +30,7 @@
     width: 40%;
     z-index: 2;
     /* background-color: pink; */
+    padding-left: 20px;
     justify-content: center;
     gap: 20px;
     align-items: center;
@@ -65,6 +68,9 @@
 .user-field{
     width: 40%;
 }
+.user-field2 {
+    width: 100%;
+}
 .address{
     width: 100%;
     /* justify-content: center; */
@@ -95,4 +101,116 @@
     width: 200px;
     color: #831843 !important;
     border: 1px solid #831843 !important;
+    border-radius: 20px !important;
+}
+
+.counter-adults{
+    text-align: center;
+    gap: 5px;
+    /* background-color: red; */
+}
+.counter{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid purple;
+    border-radius: 20px !important;
+    width: 120px;
+    height: 40px;
+}
+.title2{
+    font-size: medium;
+    color: purple;
+}
+.title3{
+    font-size: large;
+    color: #831843;
+}
+.availability{
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+.title4{
+    color: red;
+}
+.rooms-avai{
+    width: 100%;
+    /* background-color: red; */
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    color: #831843;
+}
+.room-type-avai{
+    /* font-size: medium; */
+    font-size: 17px;
+    gap: 10px;
+}
+
+
+@media screen and (max-width:850px){
+    .home{
+        overflow: scroll;
+    }
+    .header{
+        height: 160px;
+    }
+    .calendar-with-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 40px !important;
+        gap: 50px;
+    }
+    .calender-date{
+        padding: 0px;
+        width: 80%;
+    }
+    ion-datetime{
+        font-size: 5px !important;
+    }
+}
+
+.budget-user{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.MuiInputBase-root {
+    color: #831843 !important;
+}
+
+.outlined-start-adornment{
+    .MuiInputBase-root {
+            color: #831843 !important;
+            border-radius: 30px !important;
+            width: 130px;
+            height: 40px;            
+            /* background-color: red; */
+            margin: auto;
+        }
+    .MuiOutlinedInput-root{
+        border: none;
+        border: 1px solid #831843 !important; 
+        /* border-color: red; */
+
+    }
+    .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+        border: 1px solid #831843 !important;
+    }
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+        border: 1px solid #831843 !important;
+    }
+    .MuiInputBase-root::placeholder{
+        background-color: white;
+    }
 }

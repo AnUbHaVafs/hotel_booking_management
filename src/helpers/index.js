@@ -1,5 +1,79 @@
 import anime from "animejs/lib/anime.es.js";
 
+export const calculateHistoryDates = (date)=>{
+  // calendar dates
+  const calendarDate = new Date(date);
+  // current date
+  const currDate = new Date();
+  const isPastDate = (calendarDate <= currDate) ? false : true;
+  const bookedDatesArr = localStorage.getItem("bookedDates");
+  const bookedDates = JSON.parse(bookedDatesArr);
+  const dateKey = String(padNumber(calendarDate.getMonth()))+String(padNumber(calendarDate.getDate()));
+  return isPastDate || bookedDates?.includes(dateKey);
+}
+
+export const calMinMonth = ()=>{
+  // current date
+  const currDate = new Date();
+  const currMonth = currDate.getMonth() + 1;
+  const currYear = currDate.getFullYear();
+  const formattedMonth = padNumber(currMonth);
+  const minDate = currYear + "-" + formattedMonth + "-01T00:00:00";
+  return minDate;
+}
+
+export const calMaxMonth = () => {
+  // current date
+  const currDate = new Date();
+  const currMonth = currDate.getMonth() + 4;
+  const currYear = currDate.getFullYear();
+  const formattedMonth = padNumber(currMonth);
+  const maxDate = currYear + "-" + formattedMonth + "-28T00:00:00";
+  return maxDate;
+};
+
+function padNumber(number) {
+  return (number < 10 ? "0" : "") + number;
+}
+
+export function hasDigit(inputString) {
+  for (var i = 0; i < inputString.length; i++) {
+    if (!isNaN(parseInt(inputString[i]))) {
+      return true;
+    }
+  }
+  return false;
+}
+
+export function containsOnlyEnglishChars(inputString) {
+  for (var i = 0; i < inputString.length; i++) {
+    var charCode = inputString.charCodeAt(i);
+    if (
+      !(
+        (charCode >= 65 && charCode <= 90) ||
+        (charCode >= 97 && charCode <= 122)
+      )
+    ) {
+      return false;
+    }
+  }
+  return true;
+}
+
+export function isValidIndianPhoneNumber(phoneNumber) {
+  if(!phoneNumber)return true;
+  // Regular expression to match Indian phone numbers with country code +91
+  var regex = /^\+91[1-9][0-9]{9}$/;
+  return regex.test(phoneNumber);
+}
+
+export function isValidEmail(email) {
+  if (!email) return true;
+  // Regular expression for validating email addresses
+  var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
 function fitElementToParent(el, padding = 0) {
   let timeout = null; // Use specific return type
 
