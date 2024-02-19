@@ -1,6 +1,8 @@
-# React + Vite
+# How to run the application in your localhost ?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```js
+git clone 'repository_name'
+```
 
 Currently, two official plugins are available:
 
