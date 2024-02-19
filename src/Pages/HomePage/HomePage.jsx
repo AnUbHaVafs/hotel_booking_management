@@ -312,7 +312,7 @@ const HomePage = () => {
                         <TextField
                         label="First name"
                         variant="standard"
-                        placeholder='type here...'
+                        placeholder='your first name'
                         className='user-field'
                         focused
                         color="secondary"
@@ -325,7 +325,7 @@ const HomePage = () => {
                         <TextField
                         label="Last name"
                         variant="standard"
-                        placeholder='type here...'
+                        placeholder='your family name'
                         className='user-field'
                         color="secondary"
                         focused
@@ -338,7 +338,7 @@ const HomePage = () => {
                         <TextField
                         label="Contact number with country code"
                         variant="standard"
-                        placeholder='+91'
+                        placeholder='+91XXXXXXXXXX'
                         className='user-field'
                         color="secondary"
                         type='text'
