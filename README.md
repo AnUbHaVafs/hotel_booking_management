@@ -34,10 +34,10 @@ Assumptions:
 6. 1 single room cost = Rs. 1000
 7. 1 double room cost = R. 4000
 8. 1 triple room cost = Rs. 3000
-9. Initially, for each day, 1 hotel = 15 single rooms, 10 double rooms, 5 triple rooms.
+9. Initially, for each day, 1 hotel = 15 single rooms, 10 double rooms, 5 triple rooms.<br></br>
 
 Note: If you found any unhandled-error from users side, don't hesitate to create an issue.
-
-Thank You
-Anubhav Agrawal
+<br></br>
+Thank You<br></br>
+Anubhav Agrawal<br></br>
 I hope you liked it, if you did then can you star mark it for me ?
